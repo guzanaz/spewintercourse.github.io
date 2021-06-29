@@ -1588,7 +1588,7 @@ ol {
 }
 
 .schedule-table-tab .schedule-table-content table thead tr th span {
-  color: #f5523b;
+  color: #497dbe;
   font-size: 16px;
   display: block;
   font-weight: 400;
@@ -1622,7 +1622,7 @@ ol {
 
 .schedule-table-tab .schedule-table-content table tbody tr td.event-time {
   width: 140px;
-  color: #f44949;
+  color: #244a79;
   font-size: 24px;
   font-weight: 600;
 }
@@ -1632,7 +1632,13 @@ ol {
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
-  background: linear-gradient(120deg, #ee8425, #f9488b);
+  /* background: linear-gradient(120deg, #ee8425, #f9488b); */
+
+  background: rgb(2,44,93);
+  background: -moz-linear-gradient(90deg, rgba(2,44,93,1) 0%, rgba(23,55,95,1) 13%, rgba(26,59,99,1) 31%, rgba(36,74,121,1) 49%, rgba(73,125,190,1) 77%, rgba(73,125,190,1) 99%);
+  background: -webkit-linear-gradient(90deg, rgba(2,44,93,1) 0%, rgba(23,55,95,1) 13%, rgba(26,59,99,1) 31%, rgba(36,74,121,1) 49%, rgba(73,125,190,1) 77%, rgba(73,125,190,1) 99%);
+  background: linear-gradient(90deg, rgba(2,44,93,1) 0%, rgba(23,55,95,1) 13%, rgba(26,59,99,1) 31%, rgba(36,74,121,1) 49%, rgba(73,125,190,1) 77%, rgba(73,125,190,1) 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c5d",endColorstr="#497dbe",GradientType=1);
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover h5 {
