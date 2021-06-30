@@ -278,17 +278,19 @@ ol {
 }
 
 .logo-serc {
-  float: left;
-  padding-top: 36px;
-  padding-bottom: 37px;
+    float: left;
+    padding-top: 27px;
+    padding-bottom: 36px;
+    padding-left: 0px;
+    max-width: 30%;
+}
   
 }
-
 .logo-serc a {
   display: inline-block;
 }
 .logo-serc img {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 .logo a {
@@ -1190,7 +1192,7 @@ ol {
 }
 
 .footer-text ul li a:hover {
-  color: #f44949;
+  color: #497dbe;
 }
 
 .footer-text .copyright-text {
@@ -2333,6 +2335,15 @@ ol {
 
 /* Large Mobile: 480px */
 @media only screen and (max-width: 767px) {
+  .logo-serc {
+    padding-left: 0px;
+  }
+
+  .ft-logo-serc {
+    max-width: 100%;
+    margin-bottom: 45px;
+  }
+
   .counter-section .cd-timer .cd-item {
     margin-bottom: 10px;
   }
