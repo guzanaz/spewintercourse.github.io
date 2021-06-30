@@ -85,6 +85,7 @@ img {
   max-width: 100%;
 }
 
+
 input:focus,
 select:focus,
 button:focus,
@@ -274,6 +275,20 @@ ol {
   float: left;
   padding-top: 36px;
   padding-bottom: 37px;
+}
+
+.logo-serc {
+  float: left;
+  padding-top: 36px;
+  padding-bottom: 37px;
+  
+}
+
+.logo-serc a {
+  display: inline-block;
+}
+.logo-serc img {
+  max-width: 60%;
 }
 
 .logo a {
@@ -1141,6 +1156,12 @@ ol {
 .footer-text .ft-logo {
   margin-bottom: 20px;
 }
+
+.ft-logo-serc {
+  display: inline-block;
+  max-width: 25%;
+  margin-bottom: 40px;
+} 
 
 .footer-text .ft-logo a {
   display: inline-block;
