@@ -1550,7 +1550,7 @@ ol {
 }
 
 .schedule-table-tab .nav-tabs .nav-item .nav-link {
-  padding: 22px 0;
+  padding: 22px 22px;
   border: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -1627,6 +1627,7 @@ ol {
   font-weight: 600;
   text-align: left;
   padding-left: 15px;
+  padding-right: 15px;
   line-height: initial;
 }
 
