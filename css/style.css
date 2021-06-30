@@ -2337,6 +2337,8 @@ ol {
 @media only screen and (max-width: 767px) {
   .logo-serc {
     padding-left: 0px;
+    max-width: 70%;
+    padding-top: 34px;
   }
 
   .ft-logo-serc {
