@@ -65,7 +65,7 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h6 {
@@ -1600,7 +1600,7 @@ ol {
 
 .schedule-table-tab .schedule-table-content table tbody tr td {
   border-right: 1px solid #e5e5e5;
-  width: 260px;
+  width: 210px;
   height: 134px;
   padding: 37px 0 36px;
 }
@@ -1621,14 +1621,17 @@ ol {
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.event-time {
-  width: 140px;
+  width: 80px;
   color: #244a79;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+  text-align: left;
+  padding-left: 15px;
+  line-height: initial;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.break h5 {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
