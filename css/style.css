@@ -1129,14 +1129,15 @@ ol {
   Footer
 -----------------------*/
 .footer-section {
-  background: #171822;
+  background: #022c5d;
   padding-top: 50px;
   padding-bottom: 60px;
 }
 
 .partner-logo {
   padding-bottom: 50px;
-  border-bottom: 1px solid #2f3039;
+  border-bottom: 1px solid #fff ;
+  opacity:30%;
 }
 
 .partner-logo .pl-table {
@@ -2312,7 +2313,14 @@ ol {
 }
 
 /* Tablet Device: 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-serc {
+    padding-top: 29px;
+    padding-bottom: 36px;
+    padding-left: 0px;
+    max-width: 38%;
+}
+
   .nav-menu .primary-btn.top-btn {
     display: none;
   }
@@ -2334,7 +2342,7 @@ ol {
 }
 
 /* Large Mobile: 480px */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   .logo-serc {
     padding-left: 0px;
     max-width: 70%;
@@ -2389,9 +2397,10 @@ ol {
   .slicknav_btn {
     margin: 34px 0;
     border-radius: 0;
+    background-color: #022c5d;
   }
   .slicknav_nav {
-    background: #222;
+    background: #022c5d;
   }
   .slicknav_nav .slicknav_row,
   .slicknav_nav a {
@@ -2405,12 +2414,13 @@ ol {
   }
   .slicknav_nav a:hover {
     border-radius: 0;
-    background: #f44949;
-    color: #ffffff;
+    background: #9fb3cc;
+    color: #022c5d;
+    font-weight: 600;
   }
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
-    background: #f44949;
+    background: #022c5d;
     color: #ffffff;
   }
   .member-item .mi-text {
