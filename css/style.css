@@ -547,10 +547,11 @@ ol {
 }
 
 .ha-text .ha-btn {
-  font-size: 16px;
+  font-size: 24px;
   color: #171822;
   font-weight: 600;
   position: relative;
+  padding-top: 15px;
 }
 
 .ha-text .ha-btn:before {
