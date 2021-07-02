@@ -776,17 +776,26 @@ ol {
   Pricing Section
 -----------------------*/
 .pricing-section {
-  padding-top: 90px;
-  padding-bottom: 80px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .pricing-section .section-title {
-  margin-bottom: 88px;
+  margin-bottom: 60px;
 }
 
 .pricing-section .section-title h2 {
   color: #ffffff;
+  font-size: 35px;
+  border-bottom: 1px solid rgb(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  border-top: 1px solid rgb(255, 255, 255, .5);
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  padding: 20px 0;
 }
+
 
 .pricing-section .section-title p {
   color: #a0a1b5;
@@ -856,6 +865,7 @@ ol {
   font-size: 16px;
   color: #6a6b7c;
   line-height: 38px;
+  justify-content: center;
 }
 
 .price-item .price-btn {
@@ -1136,6 +1146,14 @@ ol {
   padding-bottom: 60px;
 }
 
+.footer-maininfo {
+  /* border-bottom: 1px solid rgb(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  -webkit-background-clip: padding-box; /* for Safari 
+  background-clip: padding-box; for IE9+, Firefox 4+, Opera, Chrome */
+  padding-bottom: 60px;
+}
+
 .partner-logo {
   padding-bottom: 50px;
   border-bottom: 1px solid #fff ;
@@ -1153,9 +1171,35 @@ ol {
   height: 41px;
 }
 
+/*begin logo-list for universities and partners*/
+.logo-list {
+  padding: 20px 0;
+  /* text-align: center;
+  border-bottom: 1px solid rgb(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5); */
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+}
+
+.logo-list:last-child{
+  border-bottom: 0px ;
+  border-bottom: 0px ;
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.logo-list img {
+  display: inline-block;
+  max-width: 85%;
+  padding: 15px 0;
+}
+
+/* end logo-list for universities and partners*/
+
 .footer-text {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 60px 0px;
 }
 
 .footer-text .ft-logo {
@@ -1164,8 +1208,7 @@ ol {
 
 .ft-logo-serc {
   display: inline-block;
-  max-width: 25%;
-  margin-bottom: 40px;
+  max-width: 100%;
 } 
 
 .footer-text .ft-logo a {
@@ -1173,10 +1216,12 @@ ol {
 }
 
 .footer-text ul {
-  margin-bottom: 18px;
+  margin-bottom: 0px;
+  padding-top: 15px;
 }
 
 .footer-text ul li {
+  text-align: center;
   list-style: none;
   display: inline-block;
   margin-right: 52px;
