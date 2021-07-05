@@ -2101,7 +2101,7 @@ ol {
 }
 
 .comment-form input:focus {
-  border: 1px solid #f44949;
+  border: 1px solid #007bff;
   color: #171822;
 }
 
@@ -2138,7 +2138,7 @@ ol {
 }
 
 .comment-form textarea:focus {
-  border: 1px solid #f44949;
+  border: 1px solid #007bff;
   color: #171822;
 }
 
