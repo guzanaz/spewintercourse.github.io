@@ -6,6 +6,48 @@
 
 (function ($) {
 
+    /*===============================================================
+                      Working Contact Form
+    ================================================================*/
+
+    $("#contactForm").submit(function (e) {
+
+        e.preventDefault();
+        var $ = jQuery;
+
+        var postData = $(this).serializeArray(),
+            formURL = $(this).attr("action"),
+            $cfResponse = $('#contactFormResponse'),
+            $cfsubmit = $("#cfsubmit"),
+            cfsubmitText = $cfsubmit.text();
+
+        $cfsubmit.text("Sending...");
+
+
+        $.ajax({
+            url: formURL,
+            type: "POST",
+            data: postData,
+            success: function (data) {
+                $cfResponse.html(data);
+                $cfsubmit.text(cfsubmitText);
+                $('#contactForm input[name=name]').val('');
+                $('#contactForm input[name=email]').val('');
+                $('#contactForm textarea[name=message]').val('');
+            },
+            error: function (data) {
+                alert("Error occurd! Please try again");
+            }
+        });
+
+        return false;
+
+    });
+
+
+
+
+
     /*------------------
         Preloader
     --------------------*/
@@ -107,12 +149,12 @@
     // For demo preview end
 
     // Use this for real timer date
- 
-    $(document).ready(function() {
+
+    $(document).ready(function () {
         //zona horarira
         var nextYear = moment.tz("2021-07-26 10:00", "America/Chicago|US/Central");
         //formato countdown
-        $('#countdown').countdown(nextYear.toDate(), function(event) {
+        $('#countdown').countdown(nextYear.toDate(), function (event) {
             $(this).html(event.strftime("<div class='cd-item'><span>%D</span> <p>Days</p> </div>" + "<div class='cd-item'><span>%H</span> <p>Hrs</p> </div>" + "<div class='cd-item'><span>%M</span> <p>Mins</p> </div>" + "<div class='cd-item'><span>%S</span> <p>Secs</p> </div>"));
         });
     });
