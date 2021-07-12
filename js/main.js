@@ -45,9 +45,6 @@
     });
 
 
-
-
-
     /*------------------
         Preloader
     --------------------*/
@@ -65,16 +62,44 @@
     });
 
     /*------------------
-		Navigation
-	--------------------*/
+        Navigation
+    --------------------*/
     $(".mobile-menu").slicknav({
         prependTo: '#mobile-menu-wrap',
         allowParentLinks: true
     });
 
+    /*------------------------
+        Partner Slider
+    ----------------------- */
+    $(".partner-logo").owlCarousel({
+        items: 6,
+        dots: false,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        margin: 116,
+        responsive: {
+            320: {
+                items: 2,
+            },
+            480: {
+                items: 3,
+            },
+            768: {
+                items: 4,
+            },
+            992: {
+                items: 5,
+            },
+            1200: {
+                items: 6
+            }
+        }
+    });
 
     /*------------------------
-		Testimonial Slider
+        Testimonial Slider
     ----------------------- */
     $(".testimonial-slider").owlCarousel({
         items: 2,
@@ -121,7 +146,6 @@
     // For demo preview end
 
     // Use this for real timer date
-
     $(document).ready(function () {
         //zona horarira
         var nextYear = moment.tz("2021-07-26 10:00", "US/Central");
